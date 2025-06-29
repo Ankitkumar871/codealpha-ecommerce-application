@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}Cart:<br>{% for item in items %}{{item.product.name}} x {{item.quantity}}<br>{% endfor %}Total: {{total}}<br><a href='/checkout/'>Checkout</a>{% endblock %}

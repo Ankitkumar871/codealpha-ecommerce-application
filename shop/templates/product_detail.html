@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}{{product.name}}<br>{{product.description}}<br>Price: {{product.price}}<form method='post' action='/add/{{product.id}}/'>{% csrf_token %}<button>Add to Cart</button></form>{% endblock %}
